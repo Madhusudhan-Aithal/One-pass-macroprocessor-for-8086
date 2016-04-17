@@ -1,0 +1,15 @@
+test2 macro a1,a2
+MOV AX,a1
+ADD AX,a2
+endm
+
+test1 macro a1,a2,a3
+
+mov ax,a1
+mov bx,a2
+
+endm
+
+
+test1 x,y,z
+test1 c1,c2,c3
