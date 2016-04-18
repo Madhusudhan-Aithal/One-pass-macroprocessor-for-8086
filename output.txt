@@ -1,13 +1,13 @@
-MOV AX,a1
+??0000: MOV AX,a1
 ADD AX,a2
 MOV AH,6 
-$AAL2: MOV AL,0
+MOV AL,0
 MOV BH,7
-MOV CX0
+MOV CX,0
 MOV DL,9
 MOV DH,2
 INT  10H
-$ABL3: MOV AH,2 
+??0001: MOV AH,2 
 MOV BH,0
 MOV DH,0
 MOV DL,0
@@ -15,16 +15,16 @@ INT 10H
 mov ax,x
 mov bx,y
 mov cx,z
-MOV AX,a1
+??0002: MOV AX,a1
 ADD AX,a2
 MOV AH,6 
-$ACL2: MOV AL,0
+MOV AL,0
 MOV BH,7
-MOV CX0
+MOV CX,0
 MOV DL,9
 MOV DH,2
 INT  10H
-$ADL3: MOV AH,2 
+??0003: MOV AH,2 
 MOV BH,0
 MOV DH,0
 MOV DL,0
@@ -32,3 +32,5 @@ INT 10H
 mov ax,c1
 mov bx,c2
 mov cx,c3
+??0004: MOV AX,d1
+ADD AX,d2

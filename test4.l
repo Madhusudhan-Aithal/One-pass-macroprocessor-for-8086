@@ -336,10 +336,6 @@ void replace_with_macro(char *params,int loc,char *first_substring)
             }
             char unique_label1[100],unique_label2[100],label[100];    
             strcpy(unique_label1,"??");
-/*            unique_label1[0]='$';
-            unique_label1[1]=unique_prefix[0];
-            unique_label1[2]=unique_prefix[1];
-            unique_label1[3]='\0';        */
             sprintf(unique_label2,"0x%04X",unique_label_hex);
             for(i=2;i<strlen(unique_label2);i++)
             {
@@ -347,33 +343,18 @@ void replace_with_macro(char *params,int loc,char *first_substring)
             }
             unique_label2[i-2]='\0';
             unique_label_hex+=1;
-/*            if(unique_prefix[1]<'Z')
-              unique_prefix[1]=unique_prefix[1]+1;
-            else if (unique_prefix[1]=='Z')
-            {
-              unique_prefix[0]=unique_prefix[0]+1;
-              unique_prefix[1]='A';
-            }*/
             for(i=0;i<pos;i++)      
             {                  
               label[i]=a[i];            
             } 
+            label[i]='\0';
             strcat(unique_label1,unique_label2);
-//            unique_label2[i]='\0';
-/*            for(i=1,j=strlen(unique_label1);i<strlen(unique_label2);i++,j++)
-            {
-              unique_label1[j]=unique_label2[i];
-            }
-            unique_label1[j]='\0';*/
-//            printf("%s, %s\n",unique_label1,unique_label2);
-            a=replace_str(a,label,unique_label1);
-    //        printf("\ndef=%s\n",a);
+            a=replace_str(a,label,unique_label1);  
          }
        /* Generation of unique labels - End*/
 
         /* Nested macro expansion - Start*/
         temp_n=0;
-//        char *pos_label=strchr(a,':');
         if(pos_label!=NULL)
         {
           while(a[temp_n]!=':')
@@ -513,7 +494,6 @@ void replace_with_macro(char *params,int loc,char *first_substring)
                                              else if(flag==1)
                                                {
                                                  add_def(yytext,macro_ref);
-//                                                 generate_unique_label(macro_ref);
                                                }
                                              else 
                                               {

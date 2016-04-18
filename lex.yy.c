@@ -368,8 +368,8 @@ static void yy_fatal_error (yyconst char msg[]  );
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
 
-#define YY_NUM_RULES 4
-#define YY_END_OF_BUFFER 5
+#define YY_NUM_RULES 5
+#define YY_END_OF_BUFFER 6
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -377,9 +377,13 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static yyconst flex_int16_t yy_accept[8] =
+static yyconst flex_int16_t yy_accept[48] =
     {   0,
-        0,    0,    5,    3,    2,    1,    0
+        0,    3,    6,    5,    4,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    1,    1,    3,    3,
+        3,    2,    2,    2,    2,    2,    2,    2,    2,    2,
+        2,    2,    2,    2,    2,    2,    0
     } ;
 
 static yyconst flex_int32_t yy_ec[256] =
@@ -387,17 +391,17 @@ static yyconst flex_int32_t yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    3,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    3,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    4,    1,    1,    1,    5,    5,    5,
+        5,    5,    5,    5,    5,    5,    5,    1,    1,    1,
+        1,    1,    1,    1,    6,    6,    6,    7,    8,    6,
+        6,    6,    6,    6,    6,    6,    9,   10,    6,    6,
+        6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
+        1,    1,    1,    1,    1,    1,   11,    6,   12,   13,
 
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+       14,    6,    6,    6,    6,    6,    6,    6,   15,   16,
+       17,    6,    6,   18,    6,    6,    6,    6,    6,    6,
+        6,    6,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -414,29 +418,68 @@ static yyconst flex_int32_t yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static yyconst flex_int32_t yy_meta[4] =
+static yyconst flex_int32_t yy_meta[19] =
     {   0,
-        1,    1,    1
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1
     } ;
 
-static yyconst flex_int16_t yy_base[8] =
+static yyconst flex_int16_t yy_base[55] =
     {   0,
-        0,    0,    4,    5,    5,    5,    5
+       82,    0,   83,  122,  122,    0,   14,   28,   43,    0,
+        0,   58,   72,    0,   10,    6,   71,    1,   17,   20,
+       69,   13,   25,   26,   67,   27,   68,   28,   59,   32,
+       57,   72,   70,   87,   69,  102,   58,   39,   55,   53,
+       42,   50,   40,   47,    0,   55,  122,  117,  119,   54,
+       51,   12,    6,    5
     } ;
 
-static yyconst flex_int16_t yy_def[8] =
+static yyconst flex_int16_t yy_def[55] =
     {   0,
-        7,    1,    7,    7,    7,    7,    0
+       48,   49,   47,   47,   47,   50,   51,   52,   52,    9,
+       50,   51,    9,    9,    9,   50,    9,    9,    9,    9,
+       50,    9,    9,    9,   50,    9,    9,    9,   50,    9,
+       50,   53,   54,   54,   54,   53,   36,   54,   36,   54,
+       36,   54,   36,   54,   36,   54,    0,   47,   47,   47,
+       47,   47,   47,   47
     } ;
 
-static yyconst flex_int16_t yy_nxt[9] =
+static yyconst flex_int16_t yy_nxt[141] =
     {   0,
-        4,    5,    6,    7,    3,    7,    7,    7
+        6,    5,    7,    6,    6,   35,   36,    9,   16,   17,
+       17,   22,   17,   10,   11,   20,   12,   11,   11,   17,
+       21,   14,   17,   23,   26,   20,   17,   15,   11,   17,
+       16,   11,   24,   27,   17,   17,   17,   17,   22,   11,
+       28,   17,   18,   11,   30,   16,   11,   11,   32,   40,
+       11,   13,   19,   11,   11,   11,   45,   18,   11,   43,
+       12,   11,   11,   46,   42,   14,   41,   44,   39,   11,
+       11,   15,   11,   33,   34,   35,   31,   17,   29,   25,
+       17,   17,   47,    5,   47,   47,   37,   11,   47,   34,
+       47,   47,   47,   47,   47,   47,   47,   47,   47,   47,
+
+       47,   38,   11,   47,   34,   35,   47,   47,   47,   47,
+       47,   47,   47,   47,   47,   47,   37,    4,    4,    8,
+        8,    3,   47,   47,   47,   47,   47,   47,   47,   47,
+       47,   47,   47,   47,   47,   47,   47,   47,   47,   47
     } ;
 
-static yyconst flex_int16_t yy_chk[9] =
+static yyconst flex_int16_t yy_chk[141] =
     {   0,
-        1,    1,    1,    3,    7,    7,    7,    7
+        2,    2,    2,    2,    2,   54,   53,    2,   16,   10,
+       18,   18,   52,    2,    7,   10,    7,    7,    7,   15,
+       16,    7,   22,   19,   22,   15,   19,    7,    8,   20,
+        8,    8,   20,   23,   23,   24,   26,   28,   28,   38,
+       24,   30,    8,    9,   26,    9,    9,   44,   30,   38,
+       42,   51,    9,   40,   50,   46,   43,    9,   12,   41,
+       12,   12,   12,   44,   40,   12,   39,   42,   37,   35,
+       33,   12,   32,   31,   32,   32,   29,   27,   25,   21,
+       17,   13,    3,    1,    0,    0,   32,   34,    0,   34,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+
+        0,   34,   36,    0,   36,   36,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,   36,   48,   48,   49,
+       49,   47,   47,   47,   47,   47,   47,   47,   47,   47,
+       47,   47,   47,   47,   47,   47,   47,   47,   47,   47
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -453,17 +496,407 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "remove_comments.l"
-#line 2 "remove_comments.l"
-    #include <stdio.h>
-    enum states {
-        NORMAL,
-        COMMENT_LINE
-    };
-    enum states STATE = NORMAL;
+#line 1 "test4.l"
+#line 3 "test4.l"
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<ctype.h>
 
-    int comments = 0;
-#line 467 "lex.yy.c"
+#define TABLE_SIZE 100
+#define STD_STRING_LENGTH 50
+  int flag = 0;
+  int macro_ref=-1;
+  int last_entry=0;
+  char *name_tab[TABLE_SIZE];
+  struct param_list{
+  char *param_name;
+  struct param_list* next;
+  } *args_tab[TABLE_SIZE]={};
+//  char unique_prefix[4]="AA";
+  unsigned int unique_label_hex = 0x0000;
+  struct definition
+    {
+     char *defline;
+     struct definition *next;
+    } *def_tab[TABLE_SIZE]={};
+   
+void displayerror(char *error)
+{
+  printf("\nError Occurred -> %s\n",error);
+  exit(0);
+} 
+int macro_present(char *str)
+  {
+    int r=-1,i;
+    for(i=0;i<last_entry;i++)
+       {
+         if(strcmp(str,name_tab[i])==0)
+           {
+              r=i;
+              break;
+            }
+        }
+     return r;
+   }
+void add_params(char* param,int loc)
+  {
+     struct param_list *link,*tab;
+     
+     link=(struct param_list*)malloc(sizeof(struct param_list));
+     link->next=NULL;
+     link->param_name=malloc(sizeof(char)*strlen(param));
+     strcpy(link->param_name,param);
+     tab=args_tab[loc];
+     if(tab==NULL)
+       {
+           args_tab[loc]=link;
+           return;
+        }
+     while(tab->next!=NULL)
+       tab=tab->next;
+     tab->next=link;
+  }
+int arg_count(int loc)
+ {
+     struct param_list *tab=args_tab[loc];
+     int count=0;
+     
+     while(tab!=NULL)
+       {
+         count++;
+         tab=tab->next;
+       }  
+     return count;
+ }
+char *replace_substring(char *search , char *replace , char *subject)
+{
+    char  *p = NULL , *old = NULL , *new_subject = NULL ;
+    int c = 0 , search_size;
+    search_size = strlen(search);
+    for(p = strstr(subject , search) ; p != NULL ; p = strstr(p + search_size , search))
+    {
+        c++;
+    }
+    c = ( strlen(replace) - search_size )*c + strlen(subject);
+    new_subject = malloc( c );
+    strcpy(new_subject , "");
+    old = subject;
+    for(p = strstr(subject , search) ; p != NULL ; p = strstr(p + search_size , search))
+    {
+        strncpy(new_subject + strlen(new_subject) , old , p - old);
+        strcpy(new_subject + strlen(new_subject) , replace);
+        old = p + search_size;
+    }
+    strcpy(new_subject + strlen(new_subject) , old);
+    return new_subject;
+}
+void display_params(int loc)
+  {
+     struct param_list *tab=args_tab[loc];
+     int count = 0;
+     while(tab!=NULL)
+       {
+	
+	
+     	if(count==0)
+		printf("%s",tab->param_name);
+	else
+		printf(",%s",tab->param_name);
+	 
+	 count++;
+         tab=tab->next;
+       }  
+     printf("\n");
+  }
+char *get_params(loc,y)
+  {
+    struct param_list *tab=args_tab[loc];
+     int count=0;
+     char *p=NULL;
+     while(tab!=NULL)
+       { 
+       if(count==y)
+       {
+         p=(char*)malloc(strlen(tab->param_name)*sizeof(char));
+         strcpy(p,tab->param_name);
+         return p;
+        }
+       
+       count++;
+       tab=tab->next;
+       }  
+   }
+char *replace_str(char *str, char *orig, char *rep)
+{
+    static char buffer[4096];
+    char *p;
+     
+    if(!(p = strstr(str, orig)))
+    return str;
+     
+    strncpy(buffer, str, p-str);
+    buffer[p-str] = '\0';
+     
+    sprintf(buffer+(p-str), "%s%s", rep, p+strlen(orig));
+     
+    return buffer;
+}
+void add_def(char* def,int loc)
+  {
+     struct definition *link,*tab;
+     
+     link=(struct definition*)malloc(sizeof(struct definition));
+     if(link==NULL)
+       displayerror("Error creating new node in add_def");
+     link->next=NULL;
+     link->defline=malloc(sizeof(char)*strlen(def));
+     if(link->defline==NULL)
+       displayerror("Error creating new node in add_def");
+
+     
+     strcpy(link->defline,def);
+     tab=def_tab[loc];
+     if(tab==NULL)
+       {   
+          
+           def_tab[loc]=link;
+           return;
+        }
+     while(tab->next!=NULL)
+       tab=tab->next;
+     tab->next=link;
+  }
+void display_def(int loc)
+  {
+     struct definition *tab=def_tab[loc];
+     int count=1;
+     
+     while(tab!=NULL)
+       {       
+       printf("%s \n\t",tab->defline);
+       tab=tab->next;
+       }  
+     
+  }
+
+char *get_definition(loc,y)
+  {
+    struct definition *tab=def_tab[loc];
+     int count=0;
+     char *p=NULL;
+     while(tab!=NULL)
+       { 
+       if(count==y)
+       {
+         p=(char*)malloc(strlen(tab->defline)*sizeof(char));
+         strcpy(p,tab->defline);
+         return p;
+        }
+       count++;
+       tab=tab->next;
+       }  
+   }
+void get_param_list(char*params,int loc)
+{
+  int i=0,n=strlen(params),r;
+  char e[100];
+  while(params[i]==' ')
+      i++;
+ 
+  
+  while(i<=n)
+  { 
+    if(params[i]!=' '&&params[i]!=',')
+      {
+        r=0;
+        while( params[i]!=' '&&params[i]!=','&&i<=n)
+          {
+            e[r]=params[i];
+            r++;
+            i++;
+          }
+       e[r]='\0';
+     
+       add_params(e,loc);
+       
+      }
+    else
+      {
+        if(params[i]==' ')
+          {
+             while(params[i]==' ')
+                 i++;
+             if(params[i]!=',')
+                displayerror("Error in detecting comma in get_params_list");
+              i++;
+            while(params[i]==' ')
+                 i++;
+  
+          }
+        else if(params[i]==',')
+          {
+            i++;
+            while(params[i]==' ')
+                 i++;
+               
+
+          }
+        else
+          displayerror("Character other than space and comma detected in get_params_list");
+      }       
+  }
+}
+void replace_with_macro(char *params,int loc,char *first_substring)
+{
+  int i=0,n=strlen(params),r,t=0;
+  char e[100];
+  char *list[100];
+  while(params[i]==' '&&i<=n)
+      i++;
+   
+  while(i<=n)
+  {
+    if(params[i]!=' '&&params[i]!=','&&params[i]!='\0'&&params[i]!='\n')
+      {
+        r=0;
+        while( params[i]!=' '&&params[i]!=','&&params[i]!='\n'&&i<=n)
+          {
+            e[r]=params[i];
+            r++;
+            i++;
+          }
+       e[r]='\0';
+	i++;
+       list[t]=(char*)malloc(strlen(e)*sizeof(char));
+       strcpy(list[t],e);
+      t++;
+      }
+    else
+      {
+        if(params[i]==' ')
+          {
+             while(params[i]==' ')
+                 i++;
+             if(params[i]!=',')
+                displayerror("macro replace error");
+              i++;
+            while(params[i]==' ')
+                 i++;
+  
+          }
+        else if(params[i]==',')
+          {
+            i++;
+            while(params[i]==' ')
+                 i++;
+          }
+        else if(params[i]=='\0'||params[i]=='\n')
+            break;       
+        else
+          displayerror("Invalid character error");
+      }       
+  }
+  int z=arg_count(loc);
+  if(z!=t)
+    {
+      char x[100];
+      sprintf(x,"Arguments mismatch for macro %s",first_substring);
+      displayerror(x);
+     }
+  else
+    {
+     
+     char *a=NULL;
+     char *str=NULL,m[100],original_param[100];
+     int y=0;
+     int temp_i=0,temp_n=0,temp_loc;
+     char temp_first_substring[100]={};
+     while((a=get_definition(loc,y))!=NULL)
+       {
+
+        /* Generation of unique labels - Start*/
+        char *pos_label;    
+        char *temp;
+        int i=0,pos=-1,j;
+        pos_label=strchr(a,':');    
+        if(pos_label!=NULL)
+         {
+            for(i=0;i<strlen(a);i++)
+            {
+              if(a[i]==':')
+              {
+                pos++;
+                break;
+              }
+              else
+                pos++;
+            }
+            char unique_label1[100],unique_label2[100],label[100];    
+            strcpy(unique_label1,"??");
+            sprintf(unique_label2,"0x%04X",unique_label_hex);
+            for(i=2;i<strlen(unique_label2);i++)
+            {
+              unique_label2[i-2]=unique_label2[i];
+            }
+            unique_label2[i-2]='\0';
+            unique_label_hex+=1;
+            for(i=0;i<pos;i++)      
+            {                  
+              label[i]=a[i];            
+            } 
+            label[i]='\0';
+            strcat(unique_label1,unique_label2);
+            a=replace_str(a,label,unique_label1);  
+         }
+       /* Generation of unique labels - End*/
+
+        /* Nested macro expansion - Start*/
+        temp_n=0;
+        if(pos_label!=NULL)
+        {
+          while(a[temp_n]!=':')
+            temp_n++;
+          temp_n++;
+        }
+        while(a[temp_n]==' ')
+        {
+          temp_n++;                      
+        }        
+        temp_i=0;
+        unsigned int temp_macro_len=strlen(a);
+        for(temp_i=0;temp_i<strlen(a);)
+        {
+          if(a[temp_n]!=' '&&a[temp_n]!=','&&a[temp_n]!='\n')
+          {
+            temp_first_substring[temp_i++]=a[temp_n++];
+          }
+          else
+            break;
+        }        
+        if((temp_loc=macro_present(temp_first_substring))>-1)
+        {
+          replace_with_macro(a+temp_n,temp_loc,temp_first_substring);     
+        }   
+        /* Nested macro expansion - End*/     
+        else
+        {
+         for(i=0;i<t;i++)
+           {
+            str=get_params(loc,i);
+            
+            strcpy(original_param,str);
+            
+            a=replace_substring(original_param,list[i],a);
+           }
+         fprintf(yyout,"%s",a);
+         fprintf(yyout,"\n");
+       }
+        y++;
+       }          
+     }
+}
+#line 900 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -640,6 +1073,9 @@ extern int yylex (void);
 #endif
 
 #define YY_RULE_SETUP \
+	if ( yyleng > 0 ) \
+		YY_CURRENT_BUFFER_LVALUE->yy_at_bol = \
+				(yytext[yyleng - 1] == '\n'); \
 	YY_USER_ACTION
 
 /** The main scanner function which does all the work.
@@ -650,9 +1086,9 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 11 "remove_comments.l"
+#line 402 "test4.l"
 
-#line 656 "lex.yy.c"
+#line 1092 "lex.yy.c"
 
 	if ( !(yy_init) )
 		{
@@ -693,6 +1129,7 @@ YY_DECL
 		yy_bp = yy_cp;
 
 		yy_current_state = (yy_start);
+		yy_current_state += YY_AT_BOL();
 yy_match:
 		do
 			{
@@ -705,13 +1142,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 8 )
+				if ( yy_current_state >= 48 )
 					yy_c = yy_meta[(unsigned int) yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 5 );
+		while ( yy_base[yy_current_state] != 122 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -737,37 +1174,126 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 12 "remove_comments.l"
-{if (STATE==NORMAL) STATE=COMMENT_LINE;
-    }
+#line 403 "test4.l"
+{ 
+
+       if(flag==1)
+           {
+            flag=0; 
+           }
+        else
+           {
+             displayerror("Detected endm before detecting macro name");
+           }      
+         }
 	YY_BREAK
 case 2:
-/* rule 2 can match eol */
 YY_RULE_SETUP
-#line 14 "remove_comments.l"
-{ 
-            if (STATE == COMMENT_LINE) {
-                comments++;
-                STATE = NORMAL;
-            }           
-            if (STATE == NORMAL)
-                fprintf(yyout, "\n");
-        }
+#line 416 "test4.l"
+{
+                                             if(flag==0)
+                                              {
+                                               
+                                               flag=1;
+                                               int i,j,k,l,m,n;
+                                               n=0;
+                                               char name[100]={};
+                                               
+                                               while(yytext[n]==' ')
+                                                  n++;
+                                                
+                                              l=0;
+                                               while(yytext[n]!=' ')
+                                                  name[l++]=yytext[n++];
+                                               name[l]='\0';
+                                               
+                                               macro_ref=last_entry;
+                                               last_entry++;
+                                               name_tab[macro_ref]=malloc(sizeof(char)*l);
+                                               strcpy( name_tab[macro_ref],name);
+                                               while(yytext[n]==' ')
+                                                  n++;
+                                               char macrostring[6]="macro";
+                                               j=0;
+                                               
+                                               for(i=0;i<5;i++)
+                                                 {
+                                                   
+                                                     if(tolower(macrostring[i])!=tolower(yytext[n+i]))
+                                                         {
+                                                            
+                                                             j++;
+                                                             break;
+                                                          } 
+                                                    
+                                                  }
+                                               if(j!=0)
+                                                  displayerror("Error in detecting the \"MACRO\" word in the macro prototype");
+                                               n+=5;          
+                                               while(yytext[n]==' ')
+                                                  n++;
+                                               
+                                               if(n<strlen(yytext))
+                                                if(strlen(yytext+n)>0)
+                                                   get_param_list(yytext+n,macro_ref);
+                                               
+                                               }
+                                            
+                                             else 
+                                              {
+                                               displayerror("Unknown flag Detected in the macro prototype");
+
+                                              }
+
+                                           }  
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 22 "remove_comments.l"
+#line 474 "test4.l"
 {
-            if (STATE == NORMAL)
-                fprintf(yyout, "%s", yytext);
-        }
+                                            if(flag==0)
+                                              {
+                                                char first_substring[100]={};
+                                                int n=0,i,j,k,l,m,loc=-1;
+                                                while(yytext[n]==' ')
+                                                  n++;
+                                                i=0;
+                                                while(yytext[n]!=' '&&yytext[n]!=','&&yytext[n]!='\n')
+                                                    first_substring[i++]=yytext[n++];
+                                                if((loc=macro_present(first_substring))>-1)
+                                                  {
+                                                    replace_with_macro(yytext+n,loc,first_substring);     
+                                                  }
+                                                else
+                                                 {
+                                                   fprintf(yyout,"%s",yytext);
+                                                   fprintf(yyout,"\n");
+                                                  }          
+                                               }
+                                             else if(flag==1)
+                                               {
+                                                 add_def(yytext,macro_ref);
+                                               }
+                                             else 
+                                              {
+                                               displayerror("Unknown flag Detected in the macro prototype search");
+
+                                              }
+
+                                           } 
 	YY_BREAK
 case 4:
+/* rule 4 can match eol */
 YY_RULE_SETUP
-#line 26 "remove_comments.l"
+#line 511 "test4.l"
+{};
+	YY_BREAK
+case 5:
+YY_RULE_SETUP
+#line 515 "test4.l"
 ECHO;
 	YY_BREAK
-#line 771 "lex.yy.c"
+#line 1297 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1047,6 +1573,7 @@ static int yy_get_next_buffer (void)
 	register char *yy_cp;
     
 	yy_current_state = (yy_start);
+	yy_current_state += YY_AT_BOL();
 
 	for ( yy_cp = (yytext_ptr) + YY_MORE_ADJ; yy_cp < (yy_c_buf_p); ++yy_cp )
 		{
@@ -1059,7 +1586,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 8 )
+			if ( yy_current_state >= 48 )
 				yy_c = yy_meta[(unsigned int) yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
@@ -1087,11 +1614,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 8 )
+		if ( yy_current_state >= 48 )
 			yy_c = yy_meta[(unsigned int) yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + (unsigned int) yy_c];
-	yy_is_jam = (yy_current_state == 7);
+	yy_is_jam = (yy_current_state == 47);
 
 	return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1202,6 +1729,8 @@ static int yy_get_next_buffer (void)
 	c = *(unsigned char *) (yy_c_buf_p);	/* cast for 8-bit char's */
 	*(yy_c_buf_p) = '\0';	/* preserve yytext */
 	(yy_hold_char) = *++(yy_c_buf_p);
+
+	YY_CURRENT_BUFFER_LVALUE->yy_at_bol = (c == '\n');
 
 	return c;
 }
@@ -1765,24 +2294,55 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 26 "remove_comments.l"
+#line 515 "test4.l"
 
 
-int main(int argc, char* argv[]) {
-    if (argc < 3) {
-        printf("Usage: ./run input.c output.c\n");
-        return 1;
-    }
 
-    yyin = fopen(argv[1], "r");
-    yyout = fopen(argv[2], "w");
-    yylex();
-
-    printf("No. of comment lines: %d\n", comments);
-
-
-    return 0;
+main ()
+{
+         int i=0;
+         for(i=0;i<100;i++)
+             {
+               args_tab[i]=NULL;
+               def_tab[i]=NULL;
+             }   
+        char inputfile[100] ="input.txt", outputfile[100] = "output.txt";
+	printf ("\tOne Pass Macro Processor for 8086 \n");
+	printf (" Enter the name of the input file : ");
+//	scanf ("%s",inputfile);
+	printf ("Input file : %s \n",inputfile);
+	printf ("Output file : %s \n",outputfile);
+	yyin = fopen (inputfile, "r");
+	yyout = fopen (outputfile, "w");
+	yylex ();
+         int cn,r;
+	printf("------------NAMTAB-----------\n");
+	printf("Index\t    Macro_name\n");
+        for(cn=0;cn<last_entry;cn++)
+        {
+	r=cn+1;
+	printf("%d\t\t%s\n",r,name_tab[cn]);
 }
-    
-int yywrap() { return 1; }
+printf("------------ARGTAB-----------\n");
+	printf("Index\tARG_LIST\n");
+        for(cn=0;cn<last_entry;cn++)
+        {
+	printf("%d\t",cn+1);
+	display_params(cn);
+}
+printf("------------DEFTAB-----------\n");
+	printf("Index\t Macro_definition\n");
+        for(cn=0;cn<last_entry;cn++)
+        {
+	printf("%d\t",cn+1);
+	display_def(cn);
+	printf("\n");
+}
+printf("-----------------------------\n");
+}
+yywrap ()
+{
+return 1;}
+
+	    
 

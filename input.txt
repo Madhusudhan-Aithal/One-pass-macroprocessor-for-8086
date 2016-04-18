@@ -6,19 +6,19 @@ endm
 
 
 test2 macro a1,a2
-MOV AX,a1
+L1: MOV AX,a1
 ADD AX,a2
 endm
 
 CLEAR macro
 MOV AH,6 
-$L2: MOV AL,0
+MOV AL,0
 MOV BH,7
-MOV CX0
+MOV CX,0
 MOV DL,9
 MOV DH,2
 INT  10H
-$L3: MOV AH,2 
+L3: MOV AH,2 
 MOV BH,0
 MOV DH,0
 MOV DL,0
@@ -36,3 +36,4 @@ endm
 
 test1 x,y,z
 test1 c1,c2,c3
+test2 d1,d2
